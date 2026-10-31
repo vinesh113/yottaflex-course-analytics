@@ -1,0 +1,5 @@
+scenario_id,scenario,record_id,expected_label,expected_decision
+GT-001,Duplicate events,EVT-000000002,DUPLICATE_EVENT,Exclude from engagement
+GT-002,Unenrolled activity,EVT-000000003,UNENROLLED_ACTIVITY,Reject activity
+GT-003,Completion before assessment,OUT-0000001,INVALID_COMPLETION,Keep In Progress
+GT-004,Timezone shift,EVT-000000004,TIMEZONE_BOUNDARY,Use course reporting timezone

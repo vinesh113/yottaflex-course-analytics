@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Analytics Dashboard</title>
+  <style>
+    body{font-family:system-ui,sans-serif;background:#f6f8fb;color:#172033;max-width:1100px;margin:2rem auto;padding:0 1rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}.card{background:white;border-radius:12px;padding:1.2rem;box-shadow:0 2px 10px #17203312}
+    .value{font-size:2rem;font-weight:700;color:#2457d6}table{width:100%;background:white;border-collapse:collapse}th,td{text-align:left;padding:.7rem;border-bottom:1px solid #e8ebf0}
+    a{color:#2457d6}
+  </style>
+</head>
+<body>
+  <h1>Learning Analytics Dashboard</h1>
+  <p>Deterministic synthetic data · reporting timezone: UTC</p>
+  <section class="grid">
+    {% for label, value in [("Learners", metrics.learners), ("Courses", metrics.courses), ("Enrollments", metrics.enrollments), ("Activities", metrics.activities), ("Completion rate", metrics.completion_rate ~ "%"), ("Exceptions", metrics.exceptions)] %}
+    <article class="card"><div>{{ label }}</div><div class="value">{{ value }}</div></article>
+    {% endfor %}
+  </section>
+  <h2>Exception monitoring</h2>
+  <table><tr><th>Exception</th><th>Count</th></tr>
+  {% for label, count in metrics.exception_breakdown.items() %}<tr><td>{{ label }}</td><td>{{ count }}</td></tr>{% endfor %}</table>
+  <h2>Cohort comparison</h2>
+  <table><tr><th>Cohort</th><th>Enrollments</th><th>Completed</th><th>Completion rate</th></tr>
+  {% for row in metrics.cohorts %}<tr><td>{{ row.cohort_id }}</td><td>{{ row.students }}</td><td>{{ row.completed }}</td><td>{{ row.completion_rate }}%</td></tr>{% endfor %}</table>
+  <p><a href="/api/metrics">JSON metrics</a> · <a href="/exports/ground_truth.csv">Ground truth CSV</a></p>
+</body>
+</html>

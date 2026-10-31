@@ -1,0 +1,31 @@
+{
+  "records_checked": 5987,
+  "checks": [
+    {
+      "name": "learner_ids_unique",
+      "passed": true
+    },
+    {
+      "name": "course_ids_unique",
+      "passed": true
+    },
+    {
+      "name": "enrollment_foreign_keys",
+      "passed": true
+    },
+    {
+      "name": "activity_enrollment_references",
+      "passed": true
+    },
+    {
+      "name": "assessment_scores_valid",
+      "passed": true
+    },
+    {
+      "name": "duplicate_event_counted",
+      "passed": true
+    }
+  ],
+  "failed_checks": 0,
+  "duplicate_records": 1
+}

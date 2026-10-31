@@ -1,0 +1,65 @@
+{
+  "seed": 20261022,
+  "scale": "starter",
+  "generated_at": "2026-01-31T23:30:00+00:00",
+  "reporting_timezone": "UTC",
+  "files": {
+    "learners": {
+      "rows": 100,
+      "sha256": "fb4dd344dc50945b8cf50b72a7ad709da5d2bf0751c5ab1402f7ba24b81225f2"
+    },
+    "courses": {
+      "rows": 10,
+      "sha256": "5465e0d5947efbcb1e8425d2c330d686e54dd26cbd369604977d39c2ff6edd14"
+    },
+    "cohorts": {
+      "rows": 3,
+      "sha256": "6da17661fd7f44814f707df31341f94a0c7a231d4ad2517cc3bc40c669bdb9dd"
+    },
+    "enrollments": {
+      "rows": 300,
+      "sha256": "179dddb96393cb68f89cda398cb03fea56da3924c6a12528d7e370d31f717e61"
+    },
+    "content_items": {
+      "rows": 50,
+      "sha256": "489fa0c42be0930538a94045cf10b617d3666106a3674d4d7b23ba1725c28da9"
+    },
+    "activity_events": {
+      "rows": 5000,
+      "sha256": "61de09191a1bc3bac351fabdc2cfd13458e88eb9c6cc45fda2dc5213e7f3ba81"
+    },
+    "assessments": {
+      "rows": 10,
+      "sha256": "a95e53362071803ecdd54af48d36b3115ae42e6bf922cba619b331841c46c33f"
+    },
+    "attempts": {
+      "rows": 200,
+      "sha256": "c8712faffd67c7733dd227da060c2f54af81bee0fb508a29438ac0465fd057ad"
+    },
+    "completion_rules": {
+      "rows": 10,
+      "sha256": "d34441f661ef9febcb114ff8ce595833bc71cf8e0a353b10a31d5d4c9d0704d1"
+    },
+    "course_outcomes": {
+      "rows": 300,
+      "sha256": "9ba397fe28404b8ce3f2cf629b0b55aa8f471f8e8ac195f444a6e5598247611d"
+    },
+    "ground_truth": {
+      "rows": 4,
+      "sha256": "2cce29e1bdaf21d9420246a45d18a870784654b90e405b4335b5b27d6a89e631"
+    }
+  },
+  "counts": {
+    "learners": 100,
+    "courses": 10,
+    "cohorts": 3,
+    "enrollments": 300,
+    "content_items": 50,
+    "activity_events": 5000,
+    "assessments": 10,
+    "attempts": 200,
+    "completion_rules": 10,
+    "course_outcomes": 300,
+    "ground_truth": 4
+  }
+}
